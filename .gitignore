@@ -1,4 +1,6 @@
 *admin/
+*supplies/
+*supplies/*
 
 *.png
 *.pxd
