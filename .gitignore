@@ -1,6 +1,6 @@
-*admin/
-*supplies/
-*supplies/*
+80*
+90*
+*supplies
 
 *.png
 *.pxd
