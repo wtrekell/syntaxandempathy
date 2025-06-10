@@ -1,0 +1,43 @@
+AI Brainstormed Article Ideas
+=================================
+
+💡 IDEA 1: Beyond ChatGPT Prompts: Mastering the 'Messy Middle' of AI Integration for UX Design
+   - Rationale: The raw material emphasizes the shift from ad-hoc AI interaction to structured frameworks (Introduction). This article explores the practical realities and 'messy middle' of implementing those frameworks in real-world UX workflows, addressing Strategic Sofia's need for strategic frameworks and Adaptive Alex's challenges with workflow integration.
+   - Framework: Black Hat: Critical/Challenges
+   - To Go Deeper: How can we document and share the 'messy middle' in a way that's both transparent and valuable for other UX designers?
+
+💡 IDEA 2: SCAMPERing with AI: Supercharging UX Brainstorming with Generative Tools
+   - Rationale: The raw material highlights the SCAMPER framework for creative brainstorming (Section 2.1). This article demonstrates how seasoned UX designers like Strategic Sofia and Adaptive Alex can leverage SCAMPER with AI to overcome limitations in existing knowledge and generate more diverse and unexpected design solutions.
+   - Framework: SCAMPER: Combine
+   - To Go Deeper: Can we create a SCAMPER prompt template specifically for UX design challenges?
+
+💡 IDEA 3: Wearing the Seventh Hat: How AI Augments the Six Thinking Hats Process for UX Teams
+   - Rationale: The raw material explores how AI can augment the Six Thinking Hats method (Section 2.2). This article provides practical examples and prompt templates for UX teams led by Strategic Sofia or facilitated by Systematic Sam, showing how AI can act as a 'seventh hat' providing specialized support for each thinking mode.
+   - Framework: Six Thinking Hats: Green Hat (with AI as a new hat)
+   - To Go Deeper: How might AI be used to facilitate remote Six Thinking Hats sessions for distributed UX teams?
+
+💡 IDEA 4: From Data to Wisdom: Building UX Design Principles with the DIKWP Model
+   - Rationale: The raw material introduces the DIKWP model, emphasizing purpose in the data-wisdom journey (Section 4.3). This article explores how UX designers, particularly Strategic Sofia, can use the DIKWP model to elevate design thinking and move beyond data-driven decisions to purpose-driven design principles that consider long-term implications and user experience.
+   - Framework: Yellow Hat: Positive/Benefits
+   - To Go Deeper: How might DIKWP graphs be visualized and used to guide user research or design sprints?
+
+💡 IDEA 5: The UX Designer's Guide to AI Frameworks: Choosing the Right Tool for the Job
+   - Rationale: The raw material culminates in a framework selection guide (Table 2). This article translates that guide into actionable insights for UX designers at all levels, from Curious Casey to Strategic Sofia, providing clear examples and recommendations for choosing the best framework for their specific UX design needs, echoing the brand's practical educator voice.
+   - Framework: White Hat: Facts/Objective
+   - To Go Deeper: Can we develop an interactive tool or decision tree to help UX designers select the optimal AI framework?
+
+💡 IDEA 6: Reverse Engineering UX with AI: Exploring the 'What If?' Approach
+   - Rationale: The raw material mentions "Considering the Opposite" as a creative technique (Section 2.3). This article shows how UX designers like Adaptive Alex can use AI to explore the opposite of intended user behavior or desired design outcomes, leading to a deeper understanding of design assumptions and potential edge cases.
+   - Framework: SCAMPER: Reverse
+   - To Go Deeper: How might this approach help UX designers challenge their biases and avoid design blind spots?
+
+💡 IDEA 7: Prompt Engineering for UX Research: Extracting Gold from User Interviews with RACE
+   - Rationale: The raw material features the RACE framework, highlighting its application in targeted content generation (Section 3.2). This article provides practical guidance and examples for Analytical Morgan, demonstrating how RACE can be used to craft precise prompts for AI-assisted analysis of user interview transcripts, accelerating research synthesis and uncovering deeper insights.
+   - Framework: Red Hat: Intuition/Emotions (of user data)
+   - To Go Deeper: Can we build a library of RACE prompt templates tailored to common UX research tasks?
+
+💡 IDEA 8: Building an AI-Powered UX Design Team: A Practical Framework for Systematic Sam
+   - Rationale: The raw material discusses AI strategy and governance frameworks (Section 4.7). This article adapts these concepts for UX Operations Managers like Systematic Sam, providing a clear framework for integrating AI tools into a design team, including practical steps for training, governance, and measuring the ROI of AI-assisted design.
+   - Framework: Blue Hat: Process/Control
+   - To Go Deeper: What are the key metrics for measuring the success of AI integration within a UX design team?
+
