@@ -82,18 +82,29 @@ def main(root_dir, template):
         print(f"Error scanning directory {root_dir}: {e}")
     print("Script finished.")
 
-if __name__ == "__main__":
-    # Define the root directory to scan. Change this to your target directory.
-    # For example: "C:/Users/YourUser/Documents/Projects" or "/home/user/projects"
-    ROOT_DIRECTORY = "." 
+def main(root_dir, template):
+    """
+    Main function to recursively scan ALL subdirectories and manage README.md files.
+    """
+    print(f"Starting to recursively scan subdirectories in: {root_dir}")
+    # os.walk will traverse the directory tree from the top down.
+    for dir_path, subdirs, _ in os.walk(root_dir):
+        # We modify the 'subdirs' list in place to prevent os.walk from
+        # descending into .git and .github folders, which is good practice.
+        if '.git' in subdirs:
+            subdirs.remove('.git')
+        if '.github' in subdirs:
+            subdirs.remove('.github')
 
-    # Define your README template.
-    # You can use placeholders that will be replaced by the script:
-    # {directory_name} - The name of the subdirectory
-    # {file_count} - The number of files in the directory (excluding README.md)
-    # {file_list} - A list of files and their metadata
-    README_TEMPLATE = """
-# {directory_name}
+        # The original logic was to add READMEs to subdirectories, not the root
+        # repository folder itself. We'll keep that logic by skipping the root_dir.
+        if dir_path == root_dir:
+            continue
+
+        print(f"--- Processing: {dir_path} ---")
+        create_or_update_readme(dir_path, template)
+    
+    print("Script finished.")
 
 This directory contains **{file_count}** files.
 
