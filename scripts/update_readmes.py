@@ -66,38 +66,30 @@ def create_or_update_readme(directory, template):
         except OSError as e:
             print(f"Error accessing file stats in {directory}: {e}")
 
-def main(root_dir, template):
-    """
-    Main function to scan directories and manage README.md files.
-    """
-    print(f"Starting to scan subdirectories in: {root_dir}")
-    try:
-        for item in os.listdir(root_dir):
-            dir_path = os.path.join(root_dir, item)
-            if os.path.isdir(dir_path):
-                create_or_update_readme(dir_path, template)
-    except FileNotFoundError:
-        print(f"Error: The root directory '{root_dir}' does not exist.")
-    except OSError as e:
-        print(f"Error scanning directory {root_dir}: {e}")
-    print("Script finished.")
 
-def main(root_dir, template):
+def main():
     """
     Main function to recursively scan ALL subdirectories and manage README.md files.
     """
-    print(f"Starting to recursively scan subdirectories in: {root_dir}")
-    # os.walk will traverse the directory tree from the top down.
-    for dir_path, subdirs, _ in os.walk(root_dir):
-        # We modify the 'subdirs' list in place to prevent os.walk from
-        # descending into .git and .github folders, which is good practice.
-        if '.git' in subdirs:
-            subdirs.remove('.git')
-        if '.github' in subdirs:
-            subdirs.remove('.github')
+    # The script now assumes the template file is in the same directory it is.
+    script_dir = os.path.dirname(__file__)
+    template_path = os.path.join(script_dir, 'readme_template.md')
 
-        # The original logic was to add READMEs to subdirectories, not the root
-        # repository folder itself. We'll keep that logic by skipping the root_dir.
+    try:
+        with open(template_path, 'r') as f:
+            template = f.read()
+    except FileNotFoundError:
+        print(f"FATAL: Template file not found at {template_path}")
+        return
+    
+    # We start scanning from the repository root, which is one level above the 'scripts' directory.
+    root_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
+    print(f"Starting to recursively scan subdirectories in: {root_dir}")
+
+    for dir_path, subdirs, _ in os.walk(root_dir):
+        # Prevent descending into .git, .github, and the scripts folder itself.
+        subdirs[:] = [d for d in subdirs if d not in ['.git', '.github', 'scripts']]
+
         if dir_path == root_dir:
             continue
 
@@ -106,14 +98,6 @@ def main(root_dir, template):
     
     print("Script finished.")
 
-This directory contains **{file_count}** files.
 
-## Files
-
-{file_list}
-
----
-*This README was auto-generated.*
-"""
-
-    main(ROOT_DIRECTORY, README_TEMPLATE)
+if __name__ == "__main__":
+    main()
