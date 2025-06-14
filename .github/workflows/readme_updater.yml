@@ -11,32 +11,25 @@ jobs:
   update-readmes:
     runs-on: ubuntu-latest
 
-    # IMPORTANT: This grants the workflow permissions to write back to the repository.
     permissions:
       contents: write
 
     steps:
-      # Step 1: Check out your repository code
       - name: 'Checkout Repo'
         uses: actions/checkout@v4
 
-      # Step 2: Set up the Python version
       - name: 'Set up Python'
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      # Step 3 (NEW - for verification): List all files in the repository
-      # This helps us confirm that the script file exists and where it is.
       - name: 'List files in repository'
         run: ls -R
 
-      # Step 4 (CORRECTED): Run the Python script using an absolute path
-      # We use ${{ github.workspace }} to ensure we have the full, correct path.
+      # CORRECTED to point to the script's actual location inside the 'scripts' folder.
       - name: 'Run README Update Script'
-        run: python ${{ github.workspace }}/update_readmes.py
+        run: python ${{ github.workspace }}/scripts/update_readmes.py
       
-      # Step 5: Commit and push the changes made by the script
       - name: 'Commit and Push Changes'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
