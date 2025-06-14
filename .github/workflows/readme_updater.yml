@@ -30,10 +30,17 @@ jobs:
       - name: 'Run README Update Script'
         run: python ${{ github.workspace }}/scripts/update_readmes.py
       
+# .github/workflows/readme_updater.yml
+
+# ... (all other parts of the file remain the same) ...
+      
+      # Step 5: Commit and push the changes
       - name: 'Commit and Push Changes'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'docs: Auto-generate README files'
+          # CORRECTED: Added [skip ci] to prevent infinite loops
+          commit_message: 'docs: Auto-generate README files [skip ci]'
+          
           branch: main
           commit_user_name: 'GitHub Actions Bot'
           commit_user_email: 'actions@github.com'
