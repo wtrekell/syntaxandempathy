@@ -2,8 +2,6 @@
 
 name: 'Update README Files'
 
-# Controls when the action will run. 
-# This workflow runs on pushes to the "main" branch.
 on:
   push:
     branches:
@@ -11,11 +9,14 @@ on:
 
 jobs:
   update-readmes:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # IMPORTANT: This grants the workflow permissions to write back to the repository.
+    permissions:
+      contents: write
+
     steps:
-      # Step 1: Check out your repository code so the workflow can access it
+      # Step 1: Check out your repository code
       - name: 'Checkout Repo'
         uses: actions/checkout@v4
 
@@ -23,24 +24,23 @@ jobs:
       - name: 'Set up Python'
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x' # Use the latest available version of Python 3
+          python-version: '3.x'
 
-      # Step 3: Run the Python script to generate/update READMEs
+      # Step 3 (NEW - for verification): List all files in the repository
+      # This helps us confirm that the script file exists and where it is.
+      - name: 'List files in repository'
+        run: ls -R
+
+      # Step 4 (CORRECTED): Run the Python script using an absolute path
+      # We use ${{ github.workspace }} to ensure we have the full, correct path.
       - name: 'Run README Update Script'
-        run: python update_readmes.py
-
-      # Step 4: Commit and push the changes made by the script
+        run: python ${{ github.workspace }}/update_readmes.py
+      
+      # Step 5: Commit and push the changes made by the script
       - name: 'Commit and Push Changes'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          # Required: The commit message for the automated commit
           commit_message: 'docs: Auto-generate README files'
-          
-          # Optional: The branch to push to. Defaults to the current branch.
           branch: main
-          
-          # Optional: The name of the author of the commit
           commit_user_name: 'GitHub Actions Bot'
-          
-          # Optional: The email of the author of the commit
           commit_user_email: 'actions@github.com'
