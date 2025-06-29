@@ -1,0 +1,44 @@
+author = "William Trekell"
+collection = "Markup Languages Revisited"
+date = "20250607"
+
+[ai_tools]
+ideation = """
+ChatGPT-4o
+"""
+
+experiment = """
+
+"""
+
+draft = """
+TBD
+"""
+
+refinement = """
+TBD
+"""
+
+edits = """
+Type.ai
+"""
+
+final = """
+Type.ai
+"""
+
+[ai_usage]
+description = """
+AI was used to help brainstorm ideas, generate an outline, and suggest alternative phrasings.
+"""
+reason = "To increase clarity and overcome writer’s block"
+
+human_oversight = """
+I reviewed, edited, fact-checked, and finalized the content. All content decisions were made by me.
+"""
+
+author_responsibility = """
+The ideas and conclusions expressed are my own. I take full responsibility for the article’s accuracy and integrity.
+"""
+
+final_disclosure_statement = "TBD"
