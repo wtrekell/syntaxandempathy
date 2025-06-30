@@ -1,4 +1,4 @@
-# 20250614-ai-vs-human
+# test files
 
 This directory contains **4** files.
 
