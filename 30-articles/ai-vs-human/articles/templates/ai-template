@@ -1,0 +1,88 @@
+# **Factual Report Template (For AI)**
+
+**Objective:** To provide a neutral, factual summary of the provided documents related to the specified experiment.
+
+**AI Role:** You are a research assistant. Your task is to act as a documentarian. You will only report on the information contained within the provided source files. You will not add opinions, interpretations, or any text that is not directly supported by the source material. You will not adopt a persona.
+
+---
+
+## Section 1: Experiment Overview
+
+**Instruction:** Summarize the stated purpose and setup of the experiment based on the provided documents.
+**Source Files to Reference:** `250628-04-4sonnet-pre-template.md`, `250628-05-4opus-pre-template.md`
+
+### 1.1 Stated Challenge/Problem:
+[AI summarizes the challenge that initiated the experiment, such as creative block and technical frustration with AI agents.]
+
+### 1.2 Experimental Design:
+[AI describes the frameworks (SCAMPER, Six Thinking Hats, Lotus Blossom), models (ChatGPT, Claude, Gemini), and the three-phase tournament structure used, citing the source documents.]
+
+---
+
+## Section 2: Documented Process and Observations
+
+**Instruction:** Report the sequence of events and notable observations as documented in the source files. Use direct quotes where appropriate to maintain factual accuracy.
+
+### 2.1 Initial Prompt Engineering:
+[AI reports on the challenges and learnings from the initial prompt setup, specifically the "nine-idea limit" discovered when working with ChatGPT o3.]
+
+### 2.2 Model-Specific Outputs:
+[AI lists the factual outputs and documented scoring patterns for each model (ChatGPT, Claude, Gemini) as detailed in the source files.]
+
+### 2.3 Key Finding: The Convergence Pattern
+[AI describes the objective finding that all models converged on the "The Conductor: Orchestrating Human & AI Design Teams" theme, referencing the documents that state this.]
+
+---
+
+## Section 3: Documented Analysis and Learnings
+
+**Instruction:** Report on the "What Worked" and "What Required Iteration" sections from the source documents.
+
+### 3.1 Positive Outcomes:
+[AI lists the documented successes of the experimental framework, such as the value of a structured scoring rubric and forced transparency.]
+
+### 3.2 Documented Challenges:
+[AI lists the documented iterations and limitations, such as the need for explicit output completeness and potential model bias.]
+
+---
+
+## Section 4: Human Insight Annotation Log
+
+**Instruction:** Review all provided source files for any text marked with "[HUMAN...]". For each instance, copy the marker verbatim and state the file it came from. Do not attempt to write the content for these sections.
+
+| Marker | Source File |
+| :--- | :--- |
+| `[HUMAN EXPERIENCE: Recognition of this pattern during early AI tool exploration]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN PROCESS: Evolution from single-instruction prompts to layered systems]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN INSIGHT: Discovery that AI excels at pattern recognition but requires human judgment for strategic implications]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN REACTION: Surprise at AI's effectiveness in stakeholder communication adaptation]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN INSIGHT: Recognition that bias detection requires proactive testing rather than reactive correction]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN PROCESS: Development of systematic evaluation criteria through organizational implementation]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN QUESTION: Investigation of long-term skill development patterns in AI-augmented teams]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN INSIGHT: Importance of foundation building before tool proliferation]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN EXPERIENCE: Organizational change management patterns in AI adoption]` | `250628-03-claude-4sonnet-misfire.md` |
+| `[HUMAN EXPERIENCE: The struggle to land on an article concept with sufficient narrative arc]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN PROCESS: Recognition that arbitrary limits compromise creative exploration completeness]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN REACTION: Appreciation for Claude's transparent research methodology]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN INSIGHT: Discovery of evaluation consistency patterns across AI systems]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN QUESTION: Investigation of whether AI systems have inherent biases toward management-level solutions]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN INSIGHT: Recognition that systematic approach improves creative output reliability]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN EXPERIENCE: Surprise at unanimous AI selection of orchestration concept]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN PROCESS: Development of replicable experimental methodology]` | `250628-04-4sonnet-pre-template.md` |
+| `[HUMAN EXPERIENCE: Insert personal reflection on the initial struggle and "aha" moment of deciding to write about the brainstorming process itself]` | `250628-05-4opus-pre-template.md` |
+| `[HUMAN PROCESS: Add specific details about the back-and-forth with o3 and the frustration of discovering the nine-idea limit]` | `250628-05-4opus-pre-template.md` |
+| `[HUMAN INSIGHT: Add reflection on the "eerie" moment of realization when all AIs picked similar winning concepts]` | `250628-05-4opus-pre-template.md` |
+| `[HUMAN EXPERIENCE: Add specific examples of model personality quirks encountered during the experiment]` | `250628-05-4opus-pre-template.md` |
+| `[HUMAN EVALUATION: Insert assessment of which AI-generated ideas would actually work for Syntax & Empathy's audience]` | `250628-05-4opus-pre-template.md` |
+| `[HUMAN REFLECTION: Add thoughts on whether the convergence was coincidental or indicative of actual industry needs]` | `250628-05-4opus-pre-template.md` |
+| `[HUMAN ADDITION: Include call-to-action for readers to share their own multi-model experiments]` | `250628-05-4opus-pre-template.md` |
+| `[HUMAN EXPERIENCE: Detail the specific agent connection failures that led to this pivot]` | `250629-09-model-lost-article-2.md` |
+| `[HUMAN OBSERVATION: Add specific examples of idea evolution through the phases]` | `250629-09-model-lost-article-2.md` |
+| `[HUMAN VALIDATION: Insert 2-3 examples of actual design teams struggling with AI orchestration]` | `250629-09-model-lost-article-2.md` |
+| `[HUMAN REFLECTION: Add final thoughts on what this means for your own practice going forward]` | `250629-09-model-lost-article-2.md` |
+| `[HUMAN EXPERIENCE: Add personal context about the specific frustration with agent connectivity and how it led to this pivot]` | `250629-10-model-lost-article-2.md` |
+| `[HUMAN CONTEXT: Insert specific details about which agents were being connected and why that technical challenge matters to the broader audience]` | `250629-10-model-lost-article-2.md` |
+| `[HUMAN PROCESS: Detail the specific back-and-forth with o3, including failed attempts]` | `250629-10-model-lost-article-2.md` |
+| `[HUMAN OBSERVATION: Add specific examples of how each model's "personality" manifested in outputs]` | `250629-10-model-lost-article-2.md` |
+| `[HUMAN REFLECTION: Add personal insights about what this means for the future of design work]` | `250629-10-model-lost-article-2.md` |
+| `[HUMAN ADDITION: Include specific call-to-action for where/how to share results]` | `250629-10-model-lost-article-2.md` |
