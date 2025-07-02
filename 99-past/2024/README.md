@@ -4,16 +4,16 @@ This directory contains **10** files.
 
 ## Files
 
-- q1-ai-trials.md (Size: 258737 bytes, Last Modified: 2025-07-01 19:54:34)
-- ai-trials-december-pt-1.pdf (Size: 266931 bytes, Last Modified: 2025-07-01 19:54:34)
-- AI Trials_ Documenting Global Festivities.pdf (Size: 2023671 bytes, Last Modified: 2025-07-01 19:54:34)
-- AI Trials_ Midpoint Reflections - by William Trekell.pdf (Size: 1130263 bytes, Last Modified: 2025-07-01 19:54:34)
-- q2-ai-trials.md (Size: 147228 bytes, Last Modified: 2025-07-01 19:54:34)
-- q3-ai-trials.md (Size: 115793 bytes, Last Modified: 2025-07-01 19:54:34)
-- holiday-article-index_20250322_v1.md (Size: 41579 bytes, Last Modified: 2025-07-01 19:54:34)
-- index-varied-formats.md (Size: 86751 bytes, Last Modified: 2025-07-01 19:54:34)
-- ai-trials-december-pt-2.pdf (Size: 255391 bytes, Last Modified: 2025-07-01 19:54:34)
-- q4-ai-trials.md (Size: 123090 bytes, Last Modified: 2025-07-01 19:54:34)
+- q1-ai-trials.md (Size: 258737 bytes, Last Modified: 2025-07-02 00:43:04)
+- ai-trials-december-pt-1.pdf (Size: 266931 bytes, Last Modified: 2025-07-02 00:43:04)
+- AI Trials_ Documenting Global Festivities.pdf (Size: 2023671 bytes, Last Modified: 2025-07-02 00:43:04)
+- AI Trials_ Midpoint Reflections - by William Trekell.pdf (Size: 1130263 bytes, Last Modified: 2025-07-02 00:43:04)
+- q2-ai-trials.md (Size: 147228 bytes, Last Modified: 2025-07-02 00:43:04)
+- q3-ai-trials.md (Size: 115793 bytes, Last Modified: 2025-07-02 00:43:04)
+- holiday-article-index_20250322_v1.md (Size: 41579 bytes, Last Modified: 2025-07-02 00:43:04)
+- index-varied-formats.md (Size: 86751 bytes, Last Modified: 2025-07-02 00:43:04)
+- ai-trials-december-pt-2.pdf (Size: 255391 bytes, Last Modified: 2025-07-02 00:43:04)
+- q4-ai-trials.md (Size: 123090 bytes, Last Modified: 2025-07-02 00:43:04)
 
 ---
 *This README was auto-generated.*
